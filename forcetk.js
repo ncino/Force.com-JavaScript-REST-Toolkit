@@ -119,7 +119,7 @@ if (forcetk.Client === undefined) {
 	* Set a session token and the associated metadata in the client.
 	* @param sessionId a salesforce.com session ID. In a Visualforce page,
 	*                use '{!$Api.sessionId}' to obtain a session ID.
-	* @param [apiVersion="v29.0"] Force.com API version
+	* @param [apiVersion="v31.0"] Force.com API version
 	* @param [instanceUrl] Omit this if running on Visualforce; otherwise
 	*                   use the value from the OAuth token.
 	*/
@@ -127,7 +127,7 @@ if (forcetk.Client === undefined) {
 		'use strict';
 		this.sessionId = sessionId;
 		this.apiVersion = (apiVersion === undefined || apiVersion === null)
-				? 'v29.0' : apiVersion;
+				? 'v31.0' : apiVersion;
 		if (instanceUrl === undefined || instanceUrl === null) {
 				this.visualforce = true;
 
